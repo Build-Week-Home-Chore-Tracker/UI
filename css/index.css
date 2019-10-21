@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
 html,
 body {
   margin: 0;
@@ -15,7 +22,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 h1,
 h2,
@@ -63,7 +70,7 @@ header nav a {
   font-weight: bold;
 }
 header nav a img {
-  width: 75px;
+  width: 70px;
 }
 header nav a .hideme {
   display: none;
