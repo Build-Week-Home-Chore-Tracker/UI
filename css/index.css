@@ -5,10 +5,6 @@
   font-display: swap;
   src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
 }
-.makelinkMixin {
-  text-decoration: none;
-  font-weight: bold;
-}
 html,
 body {
   margin: 0;
@@ -127,27 +123,84 @@ header {
   top: 0;
   z-index: 999;
 }
-section {
+body .sec1 {
+  width: 90%;
+  height: 375px;
+  margin: 20% 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  margin: 20% 25%;
-  border-radius: 10px;
-  border: 1px solid gray;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 5%;
 }
-section div {
+body .sec1 div {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
-section div h1 {
-  margin: 20px 0;
+body .sec1 div h4 {
+  text-align: center;
+  margin: 5px 0;
 }
-section div p {
-  font-size: 2.2rem;
-  margin: 10px 0;
+body .sec1 div p {
+  margin: 2px 0;
+  text-align: center;
+  padding: 10px 15px;
+}
+@media (min-width: 800px) {
+  body .sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 400px;
+    margin: 100px 25%;
+  }
+  body .sec1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  body .sec1 div h1 {
+    margin: 20px 0;
+  }
+  body .sec1 div p {
+    font-size: 2.2rem;
+    margin: 10px 0;
+  }
+}
+.sec2 {
+  width: 90%;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 250px;
+  margin-left: 5%;
+  border: 1px solid gray;
+}
+.sec2 div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+@media (min-width: 800px) {
+  .sec2 {
+    width: 50%;
+    margin: 5px 25% 150px;
+  }
 }
 .title {
   background-color: #dc960a;
@@ -158,8 +211,53 @@ section div p {
   color: #ffffff;
 }
 .missionStatement h4 {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 .missionStatement p {
   margin: 0;
+}
+.pitch {
+  background-color: #05af50;
+  color: #ffffff;
+}
+.contain {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.contain div {
+  width: 95%;
+  display: flex;
+  flex-flow: column;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.contain div img {
+  border-radius: 50%;
+  width: 75%;
+  margin: 0 auto;
+}
+.contain div h2 {
+  text-align: center;
+  font-size: 4.2rem;
+}
+.contain div h3 {
+  font-size: 3.6rem;
+  padding: 4px 0.5em;
+}
+@media (min-width: 800px) {
+  .contain {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+section {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  section {
+    width: 800px;
+  }
 }
