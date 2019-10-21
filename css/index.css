@@ -126,12 +126,11 @@ header {
 body .sec1 {
   width: 90%;
   height: 375px;
-  margin: 20% 0;
+  margin: 20% 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
   margin-left: 5%;
 }
 body .sec1 div {
@@ -173,6 +172,25 @@ body .sec1 div p {
   body .sec1 div p {
     font-size: 2.2rem;
     margin: 10px 0;
+  }
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+.icons .icon1 {
+  width: 70px;
+}
+.icons .icon2 {
+  width: 70px;
+}
+.icons .icon3 {
+  width: 70px;
+}
+@media (min-width: 800px) {
+  .icons {
+    margin: 0 25% 5%;
   }
 }
 .sec2 {
@@ -226,6 +244,9 @@ body .sec1 div p {
   flex-flow: column wrap;
   justify-content: center;
 }
+.contain h1 {
+  width: 100%;
+}
 .contain div {
   width: 95%;
   display: flex;
@@ -236,7 +257,7 @@ body .sec1 div p {
 }
 .contain div img {
   border-radius: 50%;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
 }
 .contain div h2 {
@@ -247,10 +268,39 @@ body .sec1 div p {
   font-size: 3.6rem;
   padding: 4px 0.5em;
 }
+@media (min-width: 500px) {
+  .contain {
+    flex-flow: row wrap;
+  }
+  .contain div {
+    width: 46%;
+  }
+  .contain div h3 {
+    font-size: 1.8rem;
+  }
+}
 @media (min-width: 800px) {
   .contain {
     width: 800px;
     margin: 0 auto;
+  }
+  .contain div {
+    width: 31%;
+  }
+  .contain .iOSteam {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .contain .iOSteam img {
+    width: 31%;
+  }
+  .contain .iOSteam h2 {
+    width: 31%;
+    order: 2;
+  }
+  .contain .iOSteam h3 {
+    width: 100%;
   }
 }
 section {

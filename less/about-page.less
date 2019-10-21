@@ -3,6 +3,9 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    h1 {
+        width: 100%;
+    }
     div {
         width: 95%;
         display: flex;
@@ -12,7 +15,7 @@
         border-radius: 15px;
         img {
             border-radius: 50%;
-            width: 75%;
+            width: 85%;
             margin: 0 auto;
         }
         h2 {
@@ -24,10 +27,38 @@
             padding: 4px 0.5em;
         }
     }
-    @media @tablet {}
+    @media @tablet {
+        flex-flow: row wrap;
+        div {
+            width: 46%;
+            h3 {
+                font-size: 1.8rem;  
+            }
+        }
+        
+    }
     @media @desktop {
         width: 800px;
         margin: 0 auto;
+        div {
+            width: 31%;
+        }
+        .iOSteam {
+            width: 100%;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            img {
+                width: 31%;
+            }
+            h2 {
+                width: 31%;
+                order: 2;
+            }
+            h3 {
+                width: 100%;  
+            }
+
+        }
     }
 }
 
