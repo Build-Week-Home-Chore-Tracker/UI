@@ -1,0 +1,41 @@
+header nav {
+    background: @gray;
+    width: 100%;
+    padding: 25px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        img {
+            width: 75px;
+        }
+        .hideme {
+            display: none;            
+        }
+        .homelink {
+            color: @blue;
+        }
+        .aboutlink {
+            color: @green;
+        }
+        .starlink {
+            color: @orange;
+        }
+    }
+    @media @tablet {
+        a .hideme {
+            display: inline-block;
+            padding: 0 0 0 5px;
+            font-size: 2.2rem;  
+        }
+    }
+    @media @desktop {
+        a img {
+            width: 45px;
+        }
+    }
+}
+

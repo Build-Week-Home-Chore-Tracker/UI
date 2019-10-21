@@ -7,3 +7,122 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header nav {
+  background: #e5e5e5;
+  width: 100%;
+  padding: 25px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a img {
+  width: 75px;
+}
+header nav a .hideme {
+  display: none;
+}
+header nav a .homelink {
+  color: #055596;
+}
+header nav a .aboutlink {
+  color: #05af50;
+}
+header nav a .starlink {
+  color: #dc960a;
+}
+@media (min-width: 500px) {
+  header nav a .hideme {
+    display: inline-block;
+    padding: 0 0 0 5px;
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 800px) {
+  header nav a img {
+    width: 45px;
+  }
+}
+header {
+  width: 100%;
+}
+section {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 20px 25%;
+  border-radius: 10px;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section div h1 {
+  margin: 20px 0;
+}
+section div p {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+.title {
+  background-color: #dc960a;
+  color: #ffffff;
+}
+.missionStatement {
+  background-color: #055596;
+  color: #ffffff;
+}
+.missionStatement h4 {
+  margin: 20px 0;
+}
+.missionStatement p {
+  margin: 0;
+}
