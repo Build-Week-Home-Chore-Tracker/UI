@@ -1,0 +1,25 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: @gray;
+    display: flex;
+    justify-content: center;
+    a {
+        width: 60%;
+        background: @orange;
+
+        .makelinkMixin();
+        font-size: 3.8rem;
+        text-align: center;
+        color: @white;
+
+        margin: 5px;
+        padding: 8px;
+        border-radius: 10px;
+        
+    }
+    @media @tablet {}
+    @media @desktop {}
+}
