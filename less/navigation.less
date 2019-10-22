@@ -8,6 +8,7 @@ header nav {
         display: flex;
         align-items: center;
         .makelinkMixin();
+        border-bottom: 3px solid @Header-Background;
         img {
             width: 70px;
         }
@@ -22,6 +23,13 @@ header nav {
         }
         .starlink {
             color: @orange;
+        }
+        &:hover {
+            border-bottom: 3px solid @white;
+            color: @white;
+            div {
+                color: @white;
+            }
         }
     }
     @media @tablet {

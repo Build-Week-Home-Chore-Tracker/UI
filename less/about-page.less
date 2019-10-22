@@ -33,6 +33,9 @@
         a {
             .makelinkMixin();
             color: @white;
+            &:hover {
+                color: black;
+            }
         }
     }
     .iOSteam {
@@ -50,6 +53,9 @@
     .projectlead {
         a {
             color: black;
+            &:hover {
+                color: @green;
+            }
         }
     }
     @media @tablet {
@@ -112,16 +118,3 @@
         }
     }
 }
-
-
-
-// hard coded at end to prevent systle conlicts
-/*
-section {
-    width: 100%;
-    @media @tablet {}
-    @media @desktop {
-        width: 90px;
-    }
-}
-*/
