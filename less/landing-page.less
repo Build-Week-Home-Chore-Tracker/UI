@@ -46,7 +46,21 @@ body .holdme {
           .icon3{
               width: 70px;
           }
+          .hideIcon {
+              display: none;
+          }
       }
+      .iconsytationforce {
+          div p {
+              text-align: center;
+              font-size: 1.2rem;
+              color: @gray;
+              a {
+                .makelinkMixin();
+                color: @gray;
+              }
+          }
+      } 
       .sec2{
         display: flex;
         flex-direction: column;
@@ -83,6 +97,7 @@ body .holdme {
     }
     @media @desktop{
         width: 90%;
+        margin: 115px auto 0 auto;
         .sec1 {
             .title {
                 flex-flow: row;
@@ -107,15 +122,20 @@ body .holdme {
             .icon1, .icon2, .icon3{
                 width: 125px;
             }
+            .hideIcon {
+                display: inline-block;
+                width: 125px;
+            }
         }
         img {
             width: 38%;
+            margin: 0 0 73px 0;
         }
         .sec2{
             width: 60%;
             display: inline-block;
             float: right;
-            margin: 0 0 0 0;
+            margin: 0 0 73px 0;
 
             h4{
                 font-size: 3.2rem;

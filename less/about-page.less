@@ -30,6 +30,10 @@
         .himeme {
             display: none;
         }
+        a {
+            .makelinkMixin();
+            color: @white;
+        }
     }
     .iOSteam {
         background: @blue;
@@ -42,6 +46,11 @@
     .reactteam {
         background: @orange;
         color: @white
+    }
+    .projectlead {
+        a {
+            color: black;
+        }
     }
     @media @tablet {
         flex-flow: row wrap;
@@ -65,7 +74,8 @@
         div {
             width: 31%;
             h2 {
-                font-size: 2.3rem;  
+                font-size: 2.3rem;
+                padding: 8px;  
             }
             .himeme {
                 display: inline-block;
@@ -80,7 +90,7 @@
             img {
                 width: 31%;
             }
-            h2 {
+            a {
                 width: 31%;
                 order: 2;
             }
