@@ -1,3 +1,134 @@
+body .holdme {
+    width: 96%;
+    margin: 115px auto 73px auto;
+    img {
+        width: 100%;   
+    }
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        div {
+            padding: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            h1, h4, p {
+                text-align: center;
+            }
+
+        }
+        .title{
+            background-color: @orange;
+            color: @white;
+            border: 1px solid black;
+        }
+        .missionStatement{
+            background-color: @blue;
+            color: @white;
+        }
+        
+    }//this ends sec1
+    .icons{
+        display:flex;
+        justify-content: space-around;
+        height: 100px;
+        background: 1px solid gray;
+          .icon1 {
+              width: 70px;
+          }
+          .icon2{
+              width: 70px;
+          }
+          .icon3{
+              width: 70px;
+          }
+      }
+      .sec2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px auto 0 auto;
+        padding: 5px;
+        background-color: @green;
+        color: @white;
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+    @media @tablet{
+        .sec1 {
+            .missionStatement{
+                width: 100%;
+                h4{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    @media @desktop{
+        width: 90%;
+        .sec1 {
+            .title {
+                flex-flow: row;
+                h1 {
+                    font-size: 5rem;
+                    padding: 4em 1em;;
+                    text-align: center;
+                }
+                .hideplease {
+                    display: none;
+                }
+            }
+            
+            img {
+                width: 50%;
+                margin: 0 0 0 auto;
+                order: 2;
+            }
+        }
+        .icons{
+            //height: 165px;
+            .icon1, .icon2, .icon3{
+                width: 125px;
+            }
+        }
+        img {
+            width: 38%;
+        }
+        .sec2{
+            width: 60%;
+            display: inline-block;
+            float: right;
+            margin: 0 0 0 0;
+
+            h4{
+                font-size: 3.2rem;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+        }
+        
+    }   
+}
+
+/*
 body .sec1 {
         width: 90%;
         //height: 375px;
@@ -7,7 +138,7 @@ body .sec1 {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        margin-left: 5%;
+        //margin-left: 5%;
 
         div{
             width: 100%;
@@ -26,6 +157,9 @@ body .sec1 {
                 margin: 2px 0;
                 text-align: center;
                 padding: 10px 15px;
+            }
+            img {
+                width: 100%;
             }
         }//this ends div
 
@@ -61,76 +195,5 @@ body .sec1 {
             }
     }
 }//this ends sec1
+*/
 
-.icons{
-  display:flex;
-  justify-content: space-around;
-  height: 100px;
-  background: 1px solid gray;
-
-    .icon1{
-        width: 70px;
-    }
-    .icon2{
-        width: 70px;
-    }
-    .icon3{
-        width: 70px;
-    }
-
-    @media @desktop{
-        width: 800px;
-        margin: 0 230px 5%;
-    }
-}
-
-.sec2{
-    width: 90%;
-    height: 375px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 150px;
-    margin-bottom: 250px;
-    margin-left: 5%;
-    border: 1px solid gray;
-
-    div{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        padding: 0 20px;
-    }
-
-    @media @desktop{
-        width: 50%;
-        margin: 5px 25% 150px;
-    }
-}
-
-.title{
-    background-color: @orange;
-    color: @white;
-}
-
-.missionStatement{
-    background-color: @blue;
-    color: @white;
-
-    h4{
-        margin: 15px 0;
-    }
-    p{
-        margin: 0;
-    }
-}
-
-.pitch{
-    background-color: @green;
-    color: @white;
-
-}//this ends pitch

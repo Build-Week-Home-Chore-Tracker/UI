@@ -132,11 +132,11 @@ html, body{
     padding: 0;
 }
 
-*{
-    max-width: 100%;
-    box-sizing: border-box;
-}
 */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -258,121 +258,196 @@ header {
   top: 0;
   z-index: 999;
 }
-body .sec1 {
-  width: 90%;
-  margin: 106px auto 20px auto;
+body .holdme {
+  width: 96%;
+  margin: 115px auto 73px auto;
+}
+body .holdme img {
+  width: 100%;
+}
+body .holdme .sec1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-left: 5%;
 }
-body .sec1 div {
-  width: 100%;
+body .holdme .sec1 div {
+  padding: 5px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   border-radius: 10px;
 }
-body .sec1 div h4 {
+body .holdme .sec1 div h1,
+body .holdme .sec1 div h4,
+body .holdme .sec1 div p {
   text-align: center;
-  margin: 5px 0;
 }
-body .sec1 div p {
-  margin: 2px 0;
-  text-align: center;
-  padding: 10px 15px;
+body .holdme .sec1 .title {
+  background-color: #dc960a;
+  color: #ffffff;
+  border: 1px solid black;
 }
-@media (min-width: 800px) {
-  body .sec1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-    margin: 106px auto;
-  }
-  body .sec1 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-  }
-  body .sec1 div h1 {
-    margin: 20px 0;
-  }
-  body .sec1 div p {
-    font-size: 2.2rem;
-    margin: 10px 0;
-  }
+body .holdme .sec1 .missionStatement {
+  background-color: #055596;
+  color: #ffffff;
 }
-.icons {
+body .holdme .icons {
   display: flex;
   justify-content: space-around;
   height: 100px;
   background: 1px solid gray;
 }
-.icons .icon1 {
+body .holdme .icons .icon1 {
   width: 70px;
 }
-.icons .icon2 {
+body .holdme .icons .icon2 {
   width: 70px;
 }
-.icons .icon3 {
+body .holdme .icons .icon3 {
   width: 70px;
 }
-@media (min-width: 800px) {
-  .icons {
-    width: 800px;
-    margin: 0 230px 5%;
-  }
-}
-.sec2 {
-  width: 90%;
-  height: 375px;
+body .holdme .sec2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 150px;
-  margin-bottom: 250px;
-  margin-left: 5%;
-  border: 1px solid gray;
+  margin: 10px auto 0 auto;
+  padding: 5px;
+  background-color: #05af50;
+  color: #ffffff;
+  border: 1px solid black;
+  border-radius: 10px;
 }
-.sec2 div {
+body .holdme .sec2 div {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   padding: 0 20px;
 }
-@media (min-width: 800px) {
-  .sec2 {
-    width: 50%;
-    margin: 5px 25% 150px;
+@media (min-width: 500px) {
+  body .holdme .sec1 .missionStatement {
+    width: 100%;
+  }
+  body .holdme .sec1 .missionStatement h4 {
+    font-size: 3rem;
+  }
+  body .holdme .sec1 .missionStatement p {
+    font-size: 2rem;
   }
 }
-.title {
-  background-color: #dc960a;
-  color: #ffffff;
+@media (min-width: 800px) {
+  body .holdme {
+    width: 90%;
+  }
+  body .holdme .sec1 .title {
+    flex-flow: row;
+  }
+  body .holdme .sec1 .title h1 {
+    font-size: 5rem;
+    padding: 4em 1em;
+    text-align: center;
+  }
+  body .holdme .sec1 .title .hideplease {
+    display: none;
+  }
+  body .holdme .sec1 img {
+    width: 50%;
+    margin: 0 0 0 auto;
+    order: 2;
+  }
+  body .holdme .icons .icon1,
+  body .holdme .icons .icon2,
+  body .holdme .icons .icon3 {
+    width: 125px;
+  }
+  body .holdme img {
+    width: 38%;
+  }
+  body .holdme .sec2 {
+    width: 60%;
+    display: inline-block;
+    float: right;
+    margin: 0 0 0 0;
+  }
+  body .holdme .sec2 h4 {
+    font-size: 3.2rem;
+  }
+  body .holdme .sec2 p {
+    font-size: 1.8rem;
+  }
 }
-.missionStatement {
-  background-color: #055596;
-  color: #ffffff;
-}
-.missionStatement h4 {
-  margin: 15px 0;
-}
-.missionStatement p {
-  margin: 0;
-}
-.pitch {
-  background-color: #05af50;
-  color: #ffffff;
-}
+/*
+body .sec1 {
+        width: 90%;
+        //height: 375px;
+        //margin: 20% 0 5%;
+        margin: 106px auto 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        //margin-left: 5%;
+
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            
+            h4{
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            p{
+                margin: 2px 0;
+                text-align: center;
+                padding: 10px 15px;
+            }
+            img {
+                width: 100%;
+            }
+        }//this ends div
+
+        @media @tablet{
+            
+        }
+
+        @media @desktop{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+            //height: 400px;
+            //margin: 100px 25%;
+            margin: 106px auto;
+
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                border-radius: 10px;
+
+                h1{
+                    margin: 20px 0;
+                }
+
+                p{
+                    font-size: 2.2rem;
+                    margin: 10px 0;
+                }
+            }
+    }
+}//this ends sec1
+*/
 .contain {
   width: 100%;
   display: flex;
