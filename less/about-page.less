@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    margin: 106px auto 65px auto;
     h1 {
         width: 100%;
     }
@@ -24,8 +25,23 @@
         }
         h3 {
             font-size: 3.6rem;
-            padding: 4px 0.5em;
+            padding: 10px 1em;
         }
+        .himeme {
+            display: none;
+        }
+    }
+    .iOSteam {
+        background: @blue;
+        color: @white
+    }
+    .webuidev, .backenddev {
+        background: @green;
+        color: @white
+    }
+    .reactteam {
+        background: @orange;
+        color: @white
     }
     @media @tablet {
         flex-flow: row wrap;
@@ -35,16 +51,30 @@
                 font-size: 1.8rem;  
             }
         }
+        .reactteam {
+            order: 1;
+        }
+        .projectlead {
+            order: 1;
+        }
         
     }
     @media @desktop {
-        width: 800px;
-        margin: 0 auto;
+        width: 90%;
+        //margin: 0 auto;
         div {
             width: 31%;
+            h2 {
+                font-size: 2.3rem;  
+            }
+            .himeme {
+                display: inline-block;
+                order: 3;
+                padding: 12px;
+            }
         }
         .iOSteam {
-            width: 100%;
+            width: 98%;
             flex-flow: row wrap;
             justify-content: space-around;
             img {
@@ -57,7 +87,18 @@
             h3 {
                 width: 100%;  
             }
+            .himeme {
+                display: inline-block;
+                order: 3;
+                padding: 12px;
+            }
 
+        }
+        .reactteam {
+            order: 0;
+        }
+        .projectlead {
+            order: 0;
         }
     }
 }
@@ -65,10 +106,12 @@
 
 
 // hard coded at end to prevent systle conlicts
+/*
 section {
     width: 100%;
     @media @tablet {}
     @media @desktop {
-        width: 800px;
+        width: 90px;
     }
 }
+*/
