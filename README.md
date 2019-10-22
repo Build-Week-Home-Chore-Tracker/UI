@@ -2,11 +2,11 @@
 
 ## Color Palets
 Main color pallets are:
--Gray for the Navigation and footers (#e5e5e5)
--Blue for text box (#055596)
--Green for text box (#05af50)
--Orange for text box (#dc960a)
--White for text (#ffffff)
+* Gray for the Navigation and footers (#e5e5e5)
+* Blue for text box (#055596)
+* Green for text box (#05af50)
+* Orange for text box (#dc960a)
+* White for text (#ffffff)
 
 Any generic colors are referring to the colors above.
 * To maintain them it is sugested to follow the less var documentation.
@@ -35,9 +35,9 @@ Titles and text are centered in their containers unless they are a title header.
 Mobile App mockup designs were made by Ciara ("CC") Beitel from our IOS team.
 
 ### Landing Page Current Design
-**Home Chore Tracker** main header container and **Mission Statement** container is edited under the first section with the class *sec1*.
+**Home Chore Tracker** main header container and **Mission Statement** container is edited under the first section with the class ```sec1```.
 
-**Pitch** is edited under *sec2* 
+**Pitch** is edited under ```sec2``` 
 
 ## Navigation
 Background stretches across 100% of the screen at any break point.

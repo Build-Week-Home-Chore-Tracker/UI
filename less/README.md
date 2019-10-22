@@ -12,7 +12,7 @@ All valibals used can be found in the ```variables.less``` file.
 
 A google font has been incorpirated for this project
 ```@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');```
-Which can be made use of on any elment by calling 
+Which can be made use of on any elment by calling
 ```font-family: 'Nunito', sans-serif;```
 as has been done in the ```global.less``` file.
 
@@ -30,13 +30,13 @@ as has been done in the ```global.less``` file.
 @tablet: ~"(min-width: 500px)";
 @desktop: ~"(min-width: 800px)";
 ```
-Exsample call 
+Exsample call
 ```
 @media @tablet {}
 @media @desktop {}
 ```
 
-## Eduiting
+## Editing
 The core index file is ```index.less``` so to allow easy mantnace of the project with ```less-watch-compiler less css index.less```.
 
 The files have self explanitory names:
@@ -54,5 +54,3 @@ The files have self explanitory names:
 @import "about-page";
 ```
 in that the header contains the less for the header page elements, navigation for nav page elements, and so on. It would be best to include custome additions in these files or in a new custome file included after the curent ones.
-
-
