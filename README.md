@@ -1,5 +1,7 @@
 # UI
 
+**Note** Do Not Touch CSS File! Please contribute to the LESS files for styling.
+
 ## Color Palets
 Main color pallets are:
 * Gray for the Navigation and footers (#e5e5e5)
