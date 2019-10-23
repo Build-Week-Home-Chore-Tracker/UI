@@ -10,25 +10,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Chore Tracker | About</title>
 
-    
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">
-            <img src="img/Menu.svg" alt="Hamburger Menu">
-            <div class="hideme homelink">Home</div>
-            </a>
-            <a href="about.html">
-            <img src="img/UserProfile.svg" alt="Person">
-            <div class="hideme aboutlink">About Us</div>
-            </a>
-            <a href="https://homechoretracker.now.sh/">
-            <img src="img/StarPoints.svg" alt="Star">
-            <div class="hideme starlink">Login</div>
-            </a>
-        </nav>
-    </header>
+  <header>
+    <nav id="navbox">
+      <a href="#" onclick="hideMenu()" class="showmemobile">
+        <img src="img/Menu.svg" alt="Hamburger Menu">
+      </a>
+      <a href="index.html" class="hidememobile" id="hidebox0">
+        <img src="img/Menu.svg" alt="Hamburger Menu">
+        <div id="hidebox" class="hideme homelink">Home</div>
+      </a>
+      <a href="about.html">
+        <img src="img/UserProfile.svg" alt="Person">
+        <div id="hidebox2" class="hideme aboutlink">About Us</div>
+      </a>
+      <a href="https://fe.home-chore-tracker.now.sh/">
+        <img src="img/StarPoints.svg" alt="Star">
+        <div id="hidebox3" class="hideme starlink">Login</div>
+      </a>
+    </nav>
+  </header>
 
 
     <section class="contain">
@@ -53,7 +56,7 @@
 
             <p class="himeme">The IOS team was in essencial in helping with the production of the IOS App of <i>Home Chore Tracker</i> They build the UI for the app and made sure all of the models were written. Thanks to them, the app was not only looking good but was functional as well! They worked with the Backend Developer Joshua Shockley to have all of the servers connected and ready for use.</p>
         </div>
-    
+
         <div class="webuidev">
             <h3>WEB UI DEVELOPERS</h3>
             <img src="img/Tyge-Davis.png" alt="Person">
@@ -107,8 +110,11 @@
 
 
     <footer>
-        <a href="https://homechoretracker.now.sh/">Sign Up</a>
-    </footer>  
+        <a href="https://fe.home-chore-tracker.now.sh/">Sign Up</a>
+    </footer>
+
+    <!-- Java Script -->
+  	<script src="js/animation.js"></script>
 
 </body>
 </html>
